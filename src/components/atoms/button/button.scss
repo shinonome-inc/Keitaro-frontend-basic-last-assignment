@@ -10,20 +10,18 @@
     transition: 0.2s ease;
     background-color: $black;
     color: $white;
-    font-size: $font-sizeS;
-  
+    font-size: $S;
+
     &:hover {
-      background-color: $orange_bistre;
-      color: $white;
-      text-decoration: none;
+        background-color: $orange_bistre;
     }
-  
+
     @media screen and(min-width:$breakpoints-md) {
-      width: 150px;
-      height: 55px;
+        width: 150px;
+        height: 55px;
     }
-  
+
     @media screen and(min-width:$breakpoints-lg) {
-      width: 200px;
+        width: 200px;
     }
-  }
+}
