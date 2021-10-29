@@ -17,12 +17,23 @@ $XL: 36px;
 $XXL: 40px;
 
 /*font-family*/
-$fontfamily-mincho: Noto Serif JP, serif;
-$fontfamily-gothic: Roboto, Noto Sans JP, sans-serif;
+$fontfamily-mincho: Noto Serif JP;
+$fontfamily-gothic: Noto sans JP;
+$fontfamily-English: Roboto;
+$fontfamily-default: BIZ UDPゴシック;
 
-/*grid-breakpoints*/
-$breakpoins-sm: 576px;
-$breakpoints-md: 768px;
-$breakpoints-lg: 992px;
-$breakpoints-xl: 1200px;
-$breakpoints-xxl: 1400px;
+/*frame*/
+$grid-breakpoints: (
+    xs: 0,
+    s: 576px,
+    m: 768px,
+    l: 992px,
+    xl: 1200px
+);
+
+$container-max-widths: (
+    s: 540px,
+    m: 720px,
+    l: 960px,
+    xl: 1140px
+);
