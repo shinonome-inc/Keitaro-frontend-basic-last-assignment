@@ -1,1 +1,19 @@
+@use "../../variables" as *;
 
+h1{
+    font-family: $fontfamily-mincho;
+    font-size: $fontsize-l;
+    display: flex;
+    align-items: center;
+
+    @media (min-width: $breakpoints-lg) {
+        font-size: $fontsize-xl;
+    }
+}
+
+p{
+    font-family: $fontfamily-gothic;
+    font-size: $fontsize-s;
+    display: flex;
+    align-items: center;
+}
