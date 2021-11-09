@@ -1,19 +1,22 @@
 @use "../../variables" as *;
 
-h1{
-    font-family: $fontfamily-mincho;
-    font-size: $fontsize-l;
-    display: flex;
-    align-items: center;
-
-    @media (min-width: $breakpoints-lg) {
-        font-size: $fontsize-xl;
+.message{
+    h2{
+        font-family: $fontfamily-mincho;
+        font-size: $fontsize-l;
+        margin-bottom: 6px;
+        display: flex;
+        align-items: center;
+        @media (min-width: $breakpoints-lg) {
+            font-size: $fontsize-xl;
+            margin-bottom: 10px;
+        }
     }
-}
 
-p{
-    font-family: $fontfamily-gothic;
-    font-size: $fontsize-s;
-    display: flex;
-    align-items: center;
+    p{
+        font-family: $fontfamily-gothic;
+        font-size: $fontsize-s;
+        display: flex;
+        align-items: center;
+    }
 }
