@@ -6,6 +6,7 @@
     align-items: center;
     width: 180px;
     height: 45px;
+    padding: 0 16px;
     transition: 0.2s ease;
     background-color: $black;
     color: $white;
@@ -14,6 +15,7 @@
     &:hover {
         color: $white;
         background-color: $orange_bistre;
+        text-decoration: none;
     }
 
     @media screen and(min-width:$breakpoints-md) {
