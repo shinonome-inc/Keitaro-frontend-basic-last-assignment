@@ -3,26 +3,18 @@
 .news-and-events-title{
     display: flex;
     align-items: center;
-
-    h2{
+    font-family: $fontfamily-gothic;
+    font-size: $fontsize-m;
+    display: flex;
+    align-items: center;
+    transform: rotate(0.76deg);
+    &>h2{
         font-family: $fontfamily-mincho;
         font-size: $fontsize-l;
         display: flex;
         align-items: center;
-        transform: rotate(0.76deg);
         @media (min-width: $breakpoints-lg) {
             font-size: $fontsize-xxl;
-        }
-    }
-
-    h3{
-        font-family: $fontfamily-gothic;
-        font-size: $fontsize-m;
-        display: flex;
-        align-items: center;
-        padding-left: 10px;
-        transform: rotate(0.76deg);
-        @media (min-width: $breakpoints-lg) {
         }
     }
 }
