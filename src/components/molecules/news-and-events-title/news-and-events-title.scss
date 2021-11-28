@@ -1,20 +1,18 @@
 @use "../../variables" as *;
 
-.news-and-events-title{
-    display: flex;
-    align-items: center;
-    font-family: $fontfamily-gothic;
-    font-size: $fontsize-m;
-    display: flex;
-    align-items: center;
-    transform: rotate(0.76deg);
-    &>h2{
-        font-family: $fontfamily-mincho;
-        font-size: $fontsize-l;
-        display: flex;
-        align-items: center;
-        @media (min-width: $breakpoints-lg) {
-            font-size: $fontsize-xxl;
-        }
+h2 {
+  display: flex;
+  align-items: center;
+  font-family: $fontfamily-gothic;
+  font-size: $fontsize-m;
+  display: flex;
+  align-items: center;
+  transform: rotate(0.76deg);
+  & > .news-and-events-title {
+    font-family: $fontfamily-mincho;
+    font-size: $fontsize-l;
+    @media (min-width: $breakpoints-lg) {
+      font-size: $fontsize-xxl;
     }
+  }
 }
