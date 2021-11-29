@@ -1,14 +1,14 @@
 @use "../../variables" as *;
 
 .message {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
   & > h2 {
     font-family: $fontfamily-mincho;
     font-size: $fontsize-l;
     margin-bottom: 6px;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
     padding: 0px 0px 6px;
     @media (min-width: $breakpoints-lg) {
       font-size: $fontsize-xl;
@@ -16,13 +16,8 @@
       padding: 0px 0px 10px;
     }
   }
-
   & > p {
     font-family: $fontfamily-gothic;
     font-size: $fontsize-s;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
   }
 }
