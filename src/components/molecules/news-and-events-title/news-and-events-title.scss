@@ -2,13 +2,12 @@
 
 h2 {
   display: flex;
+  flex-direction: row;
   align-items: center;
   font-family: $fontfamily-gothic;
   font-size: $fontsize-m;
-  display: flex;
-  align-items: center;
-  transform: rotate(0.76deg);
   & > .news-and-events-title {
+    padding-right: 16px;
     font-family: $fontfamily-mincho;
     font-size: $fontsize-l;
     @media (min-width: $breakpoints-lg) {
