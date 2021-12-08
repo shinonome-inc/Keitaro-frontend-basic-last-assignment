@@ -1,1 +1,66 @@
+@use "../../variables" as *;
 
+.card {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $white_smoke;
+  font-family: $fontfamily-gothic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $fontsize-s;
+  line-height: 33px;
+  transition: 0.2s ease;
+
+  & > h2 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 0;
+    top: 0;
+    padding-left: 6px;
+    font-weight: bold;
+    font-size: $fontsize-l;
+    line-height: 29px;
+    color: $orange_bistre;
+    background: linear-gradient(
+        to bottom right,
+        $white 50%,
+        rgba(0, 0, 0, 0) 51%
+      )
+      no-repeat top left / 100%;
+  }
+  & .card-body {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+
+    & .button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 180px;
+      height: 45px;
+      padding: 0 16px;
+      background-color: $black;
+      color: $white;
+
+      &:hover {
+        color: $white;
+        background-color: $orange_bistre;
+        text-decoration: none;
+      }
+
+      @media screen and(min-width:$breakpoints-md) {
+        width: 150px;
+        height: 55px;
+      }
+
+      @media screen and(min-width:$breakpoints-lg) {
+        width: 200px;
+      }
+    }
+  }
+}
