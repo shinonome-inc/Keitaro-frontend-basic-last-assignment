@@ -3,7 +3,7 @@
 .card {
   display: flex;
   flex-flow: column;
-  justify-content: space-between;
+  text-align: center;
   align-items: center;
   background-color: $white_smoke;
   font-family: $fontfamily-gothic;
@@ -11,10 +11,12 @@
   font-weight: normal;
   font-size: $fontsize-s;
   line-height: 33px;
-  transition: 0.2s ease;
+  overflow: hidden;
 
   & > h2 {
     position: absolute;
+    z-index: 1;
+    text-align: left;
     width: 150px;
     height: 150px;
     left: 0;
@@ -31,35 +33,45 @@
       )
       no-repeat top left / 100%;
   }
-  & .card-body {
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-    align-items: center;
 
-    & .button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 180px;
-      height: 45px;
-      padding: 0 16px;
-      background-color: $black;
+  & .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 45px;
+    padding: 0 16px;
+    background-color: $black;
+    color: $white;
+    margin-top: 30px;
+    transition: 0.2s ease;
+
+    &:hover {
       color: $white;
+      background-color: $orange_bistre;
+      text-decoration: none;
+    }
+
+    @media screen and(min-width:$breakpoints-md) {
+      width: 150px;
+      height: 55px;
+    }
+
+    @media screen and(min-width:$breakpoints-lg) {
+      width: 200px;
+    }
+  }
+  @media screen and(min-width:$breakpoints-md) {
+    width: 224px;
+    img {
+      height: 171px;
+      overflow: hidden;
+      transition: 0.5s ease;
+      position: relative;
 
       &:hover {
-        color: $white;
-        background-color: $orange_bistre;
-        text-decoration: none;
-      }
-
-      @media screen and(min-width:$breakpoints-md) {
-        width: 150px;
-        height: 55px;
-      }
-
-      @media screen and(min-width:$breakpoints-lg) {
-        width: 200px;
+        width: 120%;
+        object-fit: cover;
       }
     }
   }
