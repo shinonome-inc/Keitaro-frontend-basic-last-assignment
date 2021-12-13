@@ -20,6 +20,7 @@
   & > p {
     font-family: $fontfamily-gothic;
     font-size: $fontsize-s;
+    margin-bottom: 0px;
     line-height: 28px;
     @media (min-width: $breakpoints-lg) {
       line-height: 36px;
