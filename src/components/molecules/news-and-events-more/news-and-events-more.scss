@@ -6,6 +6,10 @@
   color: $black;
   transition: 0.2s ease;
 
+  & > i {
+    margin-left: 16px;
+  }
+
   &:hover {
     color: $gray_nobel;
     text-decoration: none;
