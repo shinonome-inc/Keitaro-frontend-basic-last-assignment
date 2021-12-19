@@ -1,17 +1,19 @@
 @use "../../variables" as *;
 
 .news-and-events-more {
-  font-size: $fontsize-s;
-  line-height: 20px;
-  color: $black;
-  transition: 0.2s ease;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	font-size: $fontsize-s;
+	color: $black;
+	transition: 0.2s ease;
 
-  & > i {
-    margin-left: 16px;
-  }
+	& > i {
+		margin-left: 16px;
+	}
 
-  &:hover {
-    color: $gray_nobel;
-    text-decoration: none;
-  }
+	&:hover {
+		color: $gray_nobel;
+		text-decoration: none;
+	}
 }
