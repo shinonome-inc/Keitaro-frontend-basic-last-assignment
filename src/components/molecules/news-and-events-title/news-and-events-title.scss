@@ -1,18 +1,18 @@
 @use "../../variables" as *;
 
-h2 {
-  display: flex;
-  align-items: center;
-  font-size: $fontsize-m;
-  line-height: 23px;
-  & > .news-and-events-title {
-    margin-right: 16px;
+.news-and-events-title {
+  & > h2 {
+    display: flex;
+    align-items: center;
     font-family: $fontfamily-mincho;
     font-size: $fontsize-l;
-    line-height: 29px;
     @media (min-width: $breakpoints-lg) {
       font-size: $fontsize-xxl;
-      line-height: 57px;
+    }
+    & > span {
+      font-family: $fontfamily-gothic;
+      font-size: $fontsize-m;
+      margin-left: 16px;
     }
   }
 }
