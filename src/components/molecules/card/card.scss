@@ -30,6 +30,11 @@
 
 		@media screen and (min-width: $breakpoints-md) {
 			transition: 0.5s ease;
+
+			&:hover {
+				cursor: pointer;
+				transform: scale(1.2);
+			}
 		}
 	}
 
@@ -45,16 +50,6 @@
 			font-size: $fontsize-s;
 			line-height: 33px;
 			margin-bottom: 30px;
-		}
-	}
-
-	&:hover {
-		cursor: pointer;
-
-		@media screen and (min-width: $breakpoints-md) {
-			a > .card-img {
-				transform: scale(1.2);
-			}
 		}
 	}
 }
